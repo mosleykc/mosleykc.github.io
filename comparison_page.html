@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- adding meta tag for viewport and width to help with multiple sized device layouts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <title>Supporting Data</title>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+               
+                <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#smNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> 
+                <a class="navbar-brand brand" href="index.html">Confabulators Analytics</a>  
+        </div> <!-- navbar header-->
+        <div class="collapse navbar-collapse" id="smNav">
+         <ul class="nav nav-pills navbar-right"> <!-- navbar-nav-->
+            <!--<li role="presentation" class="active"><a href="index.html">Home</a></li>-->
+            <li role="presentation"><a href="page1.html">Plots</a></li>
+            <li role="presentation"><a href="page2.html">Comparison</a></li>
+            <li role="presentation"><a href="data_page.html">Data</a></li>
+          </ul>
+        </div> <!-- collapse-->
+    </div>  <!-- container fluid-->
+</nav>
+<div class="container-fluid text-center mt-200">
+    
+    <h2>Comparison - Coffee Consumption vs Productivity</h2>
+    <!-- using the "lead" class to make paragraph more prominent -->
+    <p>Click any plot to get an in-depth analysis.</p>
+
+<div class="row">
+        <div class="col-sm-6">
+            <h4>Avg Coffee Consumption - World</h4>
+            <a href="vis2_page.html" title="Avg Coffee Consumption - World"> <img class="img-responsive" src="avg_consumption_world.png"  alt="Avg Coffee Consumption Worldwide" style="width:100%"></a><br></div>
+        <div class="col-sm-6">
+            <h4>Avg GDP per Hour Worked ($) - World</h4>
+            <a href="vis2_page.html" title="Avg GDP per Hour Worked ($) - World"> <img class="img-responsive" src="gdp_world.png"  alt="Avg GDP per Hour Worked ($) - World" style="width:100%"></a>
+        </div> <!-- col -->
+    </div> 
+    <div class="row">    
+        <div class="col-sm-6">
+                <h4>Coffee Consumption and Productivity Trend</h4>
+                <a href="vis2_page.html" title="World View"> <img class="img-responsive" src="ComparTrend.png"  alt="Avg Coffee Consumption Worldwide" style="width:100%"></a></div>
+            <div class="col-sm-6">  
+                <h4>Correlation Between Coffee Consumption and Productivity</h4>
+                <a href="vis2_page.html" title="Correlation"> <img class="img-responsive" src="correlation.png"  alt="Avg Coffee Consumption Worldwide" style="width:100%"></a>
+
+        </div> <!-- col -->
+    </div> <!-- row -->
+    
+</div> <!-- end top div-->
+</body>
+</html>

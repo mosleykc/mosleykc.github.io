@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- adding meta tag for viewport and width to help with multiple sized device layouts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bring in our bootstrap stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <title>Avg Coffee Consumption - World</title>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+              
+                <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#smNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> 
+                <a class="navbar-brand brand" href="index.html">Confabulators Analytics</a>
+        </div> <!-- navbar header-->
+        <div class="collapse navbar-collapse" id="smNav">
+         <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">Plots
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="vis1_page.html">World Comparison</a></li>
+                    <li><a class="dropdown-item" href="vis2_page.html">Top Countries</a></li>
+                    <li><a class="dropdown-item" href="vis3_page.html">Avg Coffee Consumption and Productivity by Year</a></li>
+                    <li><a class="dropdown-item" href="vis4_page.html"> graph</a></li>
+                </ul><!-- dropown -->
+            </li>
+            <li><a href="comparison_page.html">Comparison</a></li>
+            <li><a href="data_page.html">Data</a></li>
+          </ul>
+        </div> <!-- collapse-->
+    </div>  <!-- container fluid-->
+</nav>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9">
+                    <h2>Avg Coffee Consumption and Productivity by Year - Trend</h2>
+                    <a href="#" title="Avg Coffee Consumption and Productivity by Year"> <img class="img-responsive" style="width:75%;" src="ComparTrend.png"  alt="Avg Coffee Consumption and Productivity by Year - Trend" style="width:100%"></a><br>
+                
+        
+            <h3>Analysis</h3>
+            <p>When comparing the average coffee consumption for all countries per year, the trend for GDP continues to increase while the coffee consumption stays consistent.
+                
+            <p>The Average Coffee Consumption and Productivity by Year plot is based on the average consumption of coffee per country between 1999 - 2013 and consists of data for 29 counties. The graph was created using Plotly.
+            </div><!--col-->
+        
+            <div class="col-sm-3 border"  >
+                <h4>Visualizations</h4>
+                
+                <a href="viz1_page.html" title="Avg Coffee Consumption - World"> <img class="img-thumbnail" src="avg_consumption_world.png"  alt="Avg Coffee Consumption Worldwide" style="width:100%"></a><br>
+                
+                <a href="vis2_page.html" title="Avg GDP per Hour Worked ($) - World"> <img class="img-thumbnail" src="gdp_world.png"  alt="Avg GDP per Hour Worked ($) - World" style="width:100%"></a><br>
+                
+                <a href="viz3_page.html" title="Avg Coffee Consumption and Productivity by Year"> <img class="img-thumbnail active" src="ComparTrend.png"  alt="Avg Coffee Consumption Worldwide" style="width:100%"></a><br>
+                
+                <a href="vis4_page.html" title="Correlation Between Coffee Consumption and Productivity"> <img class="img-thumbnail" src="correlation.png"  alt="Correlation Between Coffee Consumption and Productivity" style="width:100%"></a><br>
+                
+            </div><!--img-->
+        </div><!--end row-->
+    </div><!--container-->
+    
+</div> <!-- end top div-->
+</body>
+</html>

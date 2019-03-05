@@ -1,0 +1,290 @@
+
+/* Making the body background color pure white */
+body {
+  background: rgb(243, 243, 240);
+  padding-top:90px;
+  padding-bottom:20px;
+  padding-left:20px;
+  padding-right:20px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+/* Adding color to h2 tags */
+ h2 {
+    font-size: 38px;
+    text-align: center;
+    margin: 10px 0px 18px 0px; 
+    line-height: 40px;
+    font-weight: 500;
+    color: #0099cc;
+    font-family: OpenSans-Semibold;
+  }
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  color: #0099cc;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #0099cc;
+}
+
+
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+  }
+
+table.a {
+  table-layout: fixed;
+  width: 100%;  
+}
+
+
+
+
+/*adding styling and coordinating color to column header tag */
+thead {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #0099cc;
+  color: white;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+iframe:focus { 
+  outline: none;
+}
+
+iframe[seamless] { 
+  display: block;
+}
+
+tbody tr:hover {
+  background-color:darkslategray;
+}
+
+
+
+.list-group {
+  background-color: #cdcdcd;
+}
+
+.card-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; 
+  padding-bottom: 12px;
+  padding-top: 5px;
+  color: #0099cc;
+ }
+
+.row {
+  border:1px lightgray;
+}
+
+.border {
+  border-left: 1px solid lightgray;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* Giving our navbar some padding and a background color */
+.navbar {
+ padding: 10px;
+
+ overflow: hidden;
+ max-height: 80px;
+ text-align: center;
+}
+
+.navbar-brand.brand {
+  font-size: 30px;
+  color:black;
+  background: #0099cc;
+}
+
+.navbar-toggle {
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+.img-thumbnail {
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+/* Making our navbar ul's inline-block elements this makes it so we can have multiple on the same line. 
+Floats could have been used too 
+ .navbar a {
+  display: inline-block;
+  padding: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  background: #0099cc;
+  font-size: 20px;
+  border-radius: 3px;
+}*/
+
+/* Getting rid of the default link styles here */
+ /*.navbar li a {
+  color: #000;
+  text-decoration: none;
+}*/
+
+/* Styling the header, giving it a height, a background color, and some top padding */
+.header {
+  height: 100px;
+  padding-top: 20px;
+  background: #cdcdcd;
+}
+
+/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+.header h1 {
+  padding: 0px;
+  margin: 0;
+  color: #5fafd1;
+  text-align: center;   
+  }
+
+
+
+
+
+
+.navbar.navbar-8 .navbar-toggler-icon {
+  background-image: url('https://mdbootstrap.com/img/svg/hamburger4.svg?color=1729B0');
+  }
+
+
+  .navbar a {
+    /*float: left;*/
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #5fafd1;
+    color: black;
+  }
+  
+  .active {
+    background-color: #5fafd1;
+    color: black;
+  }
+  
+  .navbar .icon {
+    display: none;
+  }
+  
+/* Dropdown Button */
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+/* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+@media (max-width: 480px) {
+  .navbar li {
+    padding: 10px 0;
+  }
+
+   .navbar ul {
+    visibility: hidden;
+  }
+
+   #nav-select {
+    visibility: visible;
+  }
+
+
+
+}
+#nav-select {
+  visibility: hidden;}
