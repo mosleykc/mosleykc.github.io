@@ -18,20 +18,30 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
-               
+              
                 <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#smNav">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button> 
-                <a class="navbar-brand brand" href="index.html">Confabulators Analytics</a>  
+                <a class="navbar-brand brand" href="index.html">Confabulators Analytics</a>
         </div> <!-- navbar header-->
         <div class="collapse navbar-collapse" id="smNav">
-         <ul class="nav nav-pills navbar-right"> <!-- navbar-nav-->
-            <!--<li role="presentation" class="active"><a href="index.html">Home</a></li>-->
-            <li role="presentation"><a href="page1.html">Plots</a></li>
-            <li role="presentation"><a href="page2.html">Comparison</a></li>
-            <li role="presentation"><a href="data_page.html">Data</a></li>
+         <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">Plots
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                   
+                    <li><a href="viz1_page.html">Consumption</a></li>
+                    <li><a href="vis2_page.html">GDP</a></li>
+                    <li><a href="viz3_page.html">Trend</a></li>
+                    <li><a href="vis4_page.html"> Correlation</a></li>
+                </ul><!-- dropown -->
+            </li>
+            <li><a href="comparison_page.html">Comparison</a></li>
+            <li><a href="data_page.html">Data</a></li>
           </ul>
         </div> <!-- collapse-->
     </div>  <!-- container fluid-->
@@ -40,7 +50,7 @@
     
             <h2>World Maps Supporting Data</h2>
             <!-- using the "lead" class to make paragraph more prominent -->
-            <p class="lead">In this analysis, use the data from the International Coffee Organization on coffee consumption for a select list of industrialized nations from 1990 through 2017 and compare it to GDP data from for the same time period.</p>
+            <p class="lead">In this analysis, we use data from the International Coffee Organization on coffee consumption for a select list of industrialized nations from 1990 through 2013 and compare it to GDP data from the same time period.</p>
       
 </div> <!--container for h2-->
 </div> <!-- end top div-->
