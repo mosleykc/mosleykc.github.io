@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- adding meta tag for viewport and width to help with multiple sized device layouts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bring in our bootstrap stylesheet -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <title>Supporting Data</title>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+              
+                <button type="button" class="navbar-toggle collapsed"  data-toggle="collapse" data-target="#smNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> 
+                <a class="navbar-brand brand" href="index.html">Confabulators Analytics</a>
+        </div> <!-- navbar header-->
+        <div class="collapse navbar-collapse" id="smNav">
+         <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">Plots
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                   
+                    <li><a href="viz1_page.html">Consumption</a></li>
+                    <li><a href="vis2_page.html">GDP</a></li>
+                    <li><a href="viz3_page.html">Trend</a></li>
+                    <li><a href="vis4_page.html"> Correlation</a></li>
+                </ul><!-- dropown -->
+            </li>
+            <li><a href="comparison_page.html">Comparison</a></li>
+            <li><a href="data_page.html">Data</a></li>
+          </ul>
+        </div> <!-- collapse-->
+    </div>  <!-- container fluid-->
+</nav>
+    
+<div class="container-fluid">
+    <div class="row ">
+        <!--<div class="col-4"></div>-->
+        <div class="col-4">
+            <img class="img-fluid rounded" src="shu-Coffee-Beans-Bag_69380449-1440x823.jpg" class="rounded " alt="Coffee Beans">
+        </div>
+    </div><!-- row -->
+  
+
+<!--<div class="container-fluid text-align:left">-->
+    <div class="row ">
+        <div class="col-12">
+            <h2>Coffee and Productivity</h2>
+            <p>On an individual level, consumption of coffee and its active ingredient, caffeine (a stimulant), is often associated with higher levels of “energy” and “productivity”. Does coffee consumption in a population correlate with higher productivity as measured in GDP per hour worked? </p>
+       
+        </div> <!-- col -->
+    </div> <!-- row -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-9">
+            <h3>Hypothesis</h3>
+            <p> Increased coffee consumption within a population correlates with increased productivity, as measured in GDP per capita.</p>
+            
+            <h3>Null Hypothesis</h3>
+            <p>There is no correlation between coffee consumption and success as measured above.</p>
+             
+            <h3>Approach</h3>
+                <p>In this analysis, we will use the data from the International Coffee Organization on coffee consumption for a select list of industrialized nations from 1990 through 2013 and compare it to GDP data from for the same time period.</p>
+                
+            <div class="card"> <!--"col-sm-12"-->
+                    <div class="card-header">
+                        Preliminary Questions
+                    </div><!--card header-->
+                    <div class="card-body">
+                            <p>What is the mean GDP (combined) for the selected nations over the time period?</p>
+                            <p>What is the mean coffee consumption (combined) for the selected nations over the time period?</p>
+                            <p> What is the mean GDP for individual nations over the time period?</p>
+                            <p>What is the mean coffee consumption for individual nations over the time period?</p>
+                        
+                    </div> <!-- card body -->
+            </div> <!--card--> 
+            <h3>Conclusions</h3>
+            <p>Amount of coffee consumed and higher productivity measured as GDP per hour worked are correlated.
+            <p  align="center">(p-value < 0.05 and correlation coefficient = 0.633)</p></p>
+            <p>According to linear regression, if the amount of coffee consumption is less than 15 kg (33 lbs), productivity increases much faster (bigger slope), while the productivity decreases slowly when the consumption is larger than 15 kg 
+            <p align="center">(slope: m<15 = 3.89,  m>15 = 0.32) </p></p>
+    
+            <p>The changes in coffee consumption do not directly affect the changes of productivity. This is because there are several factors that decide productivity and coffee is not the only factor for productivity.</p>
+ 
+            </div><!--col-->
+        
+            <div class="col-sm-3 border"  >
+                <h4>Visualizations</h2>
+                
+                <a href="viz1_page.html" title="Avg Coffee Consumption - World"> <img class="img-thumbnail" src="avg_consumption_world.png"  alt="Avg Coffee Consumption Worldwide" style="width:100%"></a><br>
+                
+                <a href="vis2_page.html" title="Avg GDP per Hour Worked ($) - World"> <img class="img-thumbnail" src="gdp_world.png"  alt="Avg GDP per Hour Worked ($) - World" style="width:100%"></a><br>
+                
+                <a href="viz3_page.html" title="Avg Coffee Consumption and Productivity by Year"> <img class="img-thumbnail" src="ComparTrend.png"  alt="Avg Coffee Consumption Worldwide" style="width:100%"></a><br>
+                
+                <a href="vis4_page.html" title="Correlation Between Coffee Consumption and Productivity"> <img class="img-thumbnail" src="correlation.png"  alt="Correlation Between Coffee Consumption and Productivity" style="width:100%"></a><br>
+                
+            </div><!--img-->
+        </div><!--end row-->
+    </div><!--container-->
+    
+</div> <!-- end top div-->
+</body>
+</html>
+
